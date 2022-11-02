@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 const cors = require("cors");
 const app = express();
+const { sequelize } = require("./src/models/");
 
 app.use(
   cors({
